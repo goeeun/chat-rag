@@ -10,3 +10,12 @@ async def get_response(
 )-> OkDTO:
     aa = request
     return OkDTO(ok=True)
+
+
+@router.get("/chat-rag-llamaindex")
+async def get_llama_index_response(
+        request: ChatQueryDTO,
+)-> OkDTO:
+    aa = request
+    return OkDTO(ok=True)
+
