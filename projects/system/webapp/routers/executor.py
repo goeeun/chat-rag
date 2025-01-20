@@ -20,7 +20,7 @@ async def get_llama_index_response(
     return OkDTO(ok=True)
 
 
-@router.get("/langchain-chat")
+@router.get("/chat-rag-langchain")
 async def get_langchain_chat_response(
         request: ChatQueryDTO,
 ) -> OkDTO:
